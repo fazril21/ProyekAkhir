@@ -1,0 +1,1328 @@
+ERROR - 2023-08-18 11:44:35 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(29): CodeIgniter\BaseModel->findAll()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->Samples()
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#9 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(29): CodeIgniter\BaseModel->findAll()
+#6 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->Samples()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2023-08-18 11:44:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dataset`', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Apps.php(29): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->Samples()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-08-18 11:44:37 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(45): CodeIgniter\BaseModel->findAll()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->Predict()
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#9 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(45): CodeIgniter\BaseModel->findAll()
+#6 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->Predict()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2023-08-18 11:44:37 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dataset`', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Apps.php(45): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->Predict()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-08-18 11:44:39 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(275): CodeIgniter\BaseModel->findAll()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->performance()
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#9 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(275): CodeIgniter\BaseModel->findAll()
+#6 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->performance()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2023-08-18 11:44:39 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dataset`', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Apps.php(275): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->performance()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-08-18 11:45:02 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(29): CodeIgniter\BaseModel->findAll()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->Samples()
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#9 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(29): CodeIgniter\BaseModel->findAll()
+#6 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->Samples()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2023-08-18 11:45:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dataset`', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Apps.php(29): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->Samples()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-08-18 11:55:04 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', 'root', 'ci4', 3306, '', 0)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(29): CodeIgniter\BaseModel->findAll()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->Samples()
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#9 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(29): CodeIgniter\BaseModel->findAll()
+#6 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->Samples()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2023-08-18 11:55:04 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dataset`', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Apps.php(29): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->Samples()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-08-18 11:58:15 --> mysqli_sql_exception: Table 'forge.dataset' doesn't exist in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(29): CodeIgniter\BaseModel->findAll()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->Samples()
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#9 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#12 {main}
+CRITICAL - 2023-08-18 11:58:15 --> Table 'forge.dataset' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dataset`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Apps.php(29): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->Samples()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-08-18 12:08:33 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'ci4' in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'ci4', 3306, '', 0)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(275): CodeIgniter\BaseModel->findAll()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->performance()
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#9 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'ci4' in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(275): CodeIgniter\BaseModel->findAll()
+#6 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->performance()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2023-08-18 12:08:33 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'ci4'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dataset`', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Apps.php(275): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->performance()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-08-18 12:16:34 --> mysqli_sql_exception: Unknown column 'is_active' in 'field list' in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `da...', 0)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(728): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(164): CodeIgniter\BaseModel->save(Array)
+#9 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+#10 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#11 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#14 {main}
+CRITICAL - 2023-08-18 12:16:34 --> Unknown column 'is_active' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dataset` (`file_name`, `file`, `url`, `is_active`) VALUES (:file_name:, :file:, :url:, :is_active:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(728): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Apps.php(164): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-08-18 12:16:39 --> mysqli_sql_exception: Unknown column 'is_active' in 'field list' in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `da...', 0)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(728): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(164): CodeIgniter\BaseModel->save(Array)
+#9 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+#10 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#11 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#14 {main}
+CRITICAL - 2023-08-18 12:16:39 --> Unknown column 'is_active' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dataset` (`file_name`, `file`, `url`, `is_active`) VALUES (:file_name:, :file:, :url:, :is_active:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(728): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Apps.php(164): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:20:07 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:20:21 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:20:23 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:20:26 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:20:32 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:20:49 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:20:50 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:20:51 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:20:51 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:20:51 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:20:53 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:20:54 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:21:31 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:21:32 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:21:33 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:21:34 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:21:37 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:21:39 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:21:40 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:21:42 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:21:44 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:21:55 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:21:59 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:22:05 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:22:06 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:22:06 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:22:07 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:22:10 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:22:17 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:23:25 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:23:26 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:23:45 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:23:51 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:23:54 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:23:55 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:23:55 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:23:55 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:23:55 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:23:55 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:23:58 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:23:59 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:23:59 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:24:01 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:24:10 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:27:49 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:27:56 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:28:00 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:28:01 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:28:01 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:28:01 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:28:01 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:28:01 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:28:06 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:28:07 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:28:10 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:30:33 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:33:10 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:36:03 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:38:16 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:38:19 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:39:12 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:55:54 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:56:00 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:56:02 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:56:06 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 12:59:08 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 13:00:38 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 13:01:08 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 13:02:27 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 13:06:12 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 13:07:15 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 13:18:33 --> Undefined array key "created_at"
+in APPPATH\Views\Dataset\table_list_dataset.php on line 37.
+ 1 APPPATH\Views\Dataset\table_list_dataset.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', 'APPPATH\\Views\\Dataset\\table_list_dataset.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_list_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_list_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(36): view('Dataset/table_list_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->TableListDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 13:22:57 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 13:49:15 --> strtoupper() expects exactly 1 argument, 0 given
+in APPPATH\Views\Dataset\table_dataset.php on line 12.
+ 1 APPPATH\Views\Dataset\table_dataset.php(12): strtoupper()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(193): view('Dataset/table_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ReadDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 13:49:15 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ArgumentCountError))
+#5 {main}
+  thrown
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-18 13:49:41 --> strtoupper() expects exactly 1 argument, 2 given
+in APPPATH\Views\Dataset\table_dataset.php on line 12.
+ 1 APPPATH\Views\Dataset\table_dataset.php(12): strtoupper('Usia;Gender;Kecamatan;Diagnosis Primer (Kategori)', ';')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(193): view('Dataset/table_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ReadDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 13:49:41 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ArgumentCountError))
+#5 {main}
+  thrown
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-18 13:49:52 --> strtoupper() expects exactly 1 argument, 3 given
+in APPPATH\Views\Dataset\table_dataset.php on line 12.
+ 1 APPPATH\Views\Dataset\table_dataset.php(12): strtoupper('Usia;Gender;Kecamatan;Diagnosis Primer (Kategori)', 3000, ';')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(193): view('Dataset/table_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ReadDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 13:49:52 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ArgumentCountError))
+#5 {main}
+  thrown
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-18 13:59:39 --> fgets() expects at most 2 arguments, 3 given
+in APPPATH\Controllers\Apps.php on line 184.
+ 1 APPPATH\Controllers\Apps.php(184): fgets(resource (stream), 3000, ';')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ReadDataset()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 13:59:39 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ArgumentCountError))
+#5 {main}
+  thrown
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-18 13:59:47 --> fgets() expects at most 2 arguments, 3 given
+in APPPATH\Controllers\Apps.php on line 184.
+ 1 APPPATH\Controllers\Apps.php(184): fgets(resource (stream), 3000, ',')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ReadDataset()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 13:59:47 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ArgumentCountError))
+#5 {main}
+  thrown
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-18 14:10:07 --> Unclosed '{' on line 15
+in APPPATH\Controllers\Apps.php on line 342.
+ 1 SYSTEMPATH\Router\Router.php(506): CodeIgniter\Router\AutoRouter->getRoute('apps/samples')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('apps/samples')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('apps/samples')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 14:30:10 --> fgetcsv(): Argument #1 ($stream) must be of type resource, string given
+in APPPATH\Views\Dataset\table_dataset.php on line 12.
+ 1 APPPATH\Views\Dataset\table_dataset.php(12): fgetcsv('Usia;Gender;Kecamatan;Diagnosis Primer (Kategori)', 5, ';')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(193): view('Dataset/table_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ReadDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 14:30:10 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#5 {main}
+  thrown
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-18 14:48:01 --> fgets() expects at most 2 arguments, 3 given
+in APPPATH\Controllers\Apps.php on line 184.
+ 1 APPPATH\Controllers\Apps.php(184): fgets(resource (stream), 1000, ';')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ReadDataset()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 14:48:01 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ArgumentCountError))
+#5 {main}
+  thrown
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-18 14:48:18 --> fgets(): Argument #2 ($length) must be of type ?int, string given
+in APPPATH\Controllers\Apps.php on line 184.
+ 1 APPPATH\Controllers\Apps.php(184): fgets(resource (stream), ';')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ReadDataset()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 14:48:18 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#5 {main}
+  thrown
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-18 14:54:09 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 14:54:10 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 14:54:10 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 14:54:10 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 14:54:10 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-18 14:54:10 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

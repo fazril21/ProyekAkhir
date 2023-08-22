@@ -1,0 +1,88 @@
+ERROR - 2023-08-17 13:21:58 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(29): CodeIgniter\BaseModel->findAll()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->Samples()
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#9 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(29): CodeIgniter\BaseModel->findAll()
+#6 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->Samples()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2023-08-17 13:21:58 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dataset`', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Apps.php(29): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->Samples()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-08-17 13:22:24 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(45): CodeIgniter\BaseModel->findAll()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->Predict()
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#9 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(45): CodeIgniter\BaseModel->findAll()
+#6 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->Predict()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2023-08-17 13:22:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dataset`', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Apps.php(45): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->Predict()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

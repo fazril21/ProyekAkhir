@@ -1,0 +1,311 @@
+INFO - 2023-08-22 01:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-22 02:12:42 --> Class "App\Controllers\Diagmosis" not found
+in APPPATH\Controllers\Apps.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Apps->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 02:12:56 --> Class "App\Controllers\Diagmosis" not found
+in APPPATH\Controllers\Apps.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Apps->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 02:12:57 --> Class "App\Controllers\Diagmosis" not found
+in APPPATH\Controllers\Apps.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Apps->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 02:12:57 --> Class "App\Controllers\Diagmosis" not found
+in APPPATH\Controllers\Apps.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Apps->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 02:12:58 --> Class "App\Controllers\Diagmosis" not found
+in APPPATH\Controllers\Apps.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Apps->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 02:12:58 --> Class "App\Controllers\Diagmosis" not found
+in APPPATH\Controllers\Apps.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Apps->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 02:12:59 --> Class "App\Controllers\Diagmosis" not found
+in APPPATH\Controllers\Apps.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Apps->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 02:27:23 --> Undefined variable $file_name
+in APPPATH\Controllers\Apps.php on line 215.
+ 1 APPPATH\Controllers\Apps.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file_name', 'APPPATH\\Controllers\\Apps.php', 215)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 02:27:57 --> Undefined variable $filedata
+in APPPATH\Controllers\Apps.php on line 215.
+ 1 APPPATH\Controllers\Apps.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $filedata', 'APPPATH\\Controllers\\Apps.php', 215)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 02:29:26 --> Undefined variable $validation
+in APPPATH\Controllers\Apps.php on line 215.
+ 1 APPPATH\Controllers\Apps.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Controllers\\Apps.php', 215)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 02:29:47 --> Undefined variable $msg
+in APPPATH\Controllers\Apps.php on line 215.
+ 1 APPPATH\Controllers\Apps.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $msg', 'APPPATH\\Controllers\\Apps.php', 215)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 02:48:46 --> Undefined array key "file_path"
+in APPPATH\Controllers\Apps.php on line 193.
+ 1 APPPATH\Controllers\Apps.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "file_path"', 'APPPATH\\Controllers\\Apps.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 02:49:46 --> Undefined array key "file_path"
+in APPPATH\Controllers\Apps.php on line 193.
+ 1 APPPATH\Controllers\Apps.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "file_path"', 'APPPATH\\Controllers\\Apps.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 03:01:49 --> Undefined array key "file_path"
+in APPPATH\Controllers\Apps.php on line 193.
+ 1 APPPATH\Controllers\Apps.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "file_path"', 'APPPATH\\Controllers\\Apps.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 03:03:25 --> fopen(D:\APP\XAMPP\htdocs\bayes\/datasets/): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Apps.php on line 211.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(D:\\APP\\XAMPP\\htdocs\\bayes\\/datasets/): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Apps.php', 211)
+ 2 APPPATH\Controllers\Apps.php(211): fopen('ROOTPATH\\datasets', 'r')
+ 3 APPPATH\Controllers\Apps.php(193): App\Controllers\Apps->getDataFromFile('ROOTPATH\\datasets')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 03:04:27 --> fopen(49): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Apps.php on line 210.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(49): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Apps.php', 210)
+ 2 APPPATH\Controllers\Apps.php(210): fopen('49', 'r')
+ 3 APPPATH\Controllers\Apps.php(193): App\Controllers\Apps->getDataFromFile('49')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 03:08:42 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Apps.php on line 212.
+ 1 APPPATH\Controllers\Apps.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Apps.php', 212)
+ 2 APPPATH\Controllers\Apps.php(193): App\Controllers\Apps->getDataFromFile('49')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 03:09:03 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Apps.php on line 212.
+ 1 APPPATH\Controllers\Apps.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Apps.php', 212)
+ 2 APPPATH\Controllers\Apps.php(193): App\Controllers\Apps->getDataFromFile('49')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 03:10:19 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Apps.php on line 212.
+ 1 APPPATH\Controllers\Apps.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Apps.php', 212)
+ 2 APPPATH\Controllers\Apps.php(193): App\Controllers\Apps->getDataFromFile('49')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 03:11:17 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Apps.php on line 212.
+ 1 APPPATH\Controllers\Apps.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Apps.php', 212)
+ 2 APPPATH\Controllers\Apps.php(193): App\Controllers\Apps->getDataFromFile('49')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 03:11:32 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Apps.php on line 212.
+ 1 APPPATH\Controllers\Apps.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Apps.php', 212)
+ 2 APPPATH\Controllers\Apps.php(193): App\Controllers\Apps->getDataFromFile('49')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 03:12:48 --> Undefined array key "kecamatan"
+in APPPATH\Controllers\Apps.php on line 193.
+ 1 APPPATH\Controllers\Apps.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kecamatan"', 'APPPATH\\Controllers\\Apps.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 03:14:08 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Apps.php on line 212.
+ 1 APPPATH\Controllers\Apps.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Apps.php', 212)
+ 2 APPPATH\Controllers\Apps.php(193): App\Controllers\Apps->getDataFromFile('49')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 03:15:13 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Apps.php on line 212.
+ 1 APPPATH\Controllers\Apps.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Apps.php', 212)
+ 2 APPPATH\Controllers\Apps.php(193): App\Controllers\Apps->getDataFromFile('49')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 03:15:34 --> Undefined array key "usia"
+in APPPATH\Controllers\Apps.php on line 193.
+ 1 APPPATH\Controllers\Apps.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usia"', 'APPPATH\\Controllers\\Apps.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 03:17:00 --> Undefined array key "usia"
+in APPPATH\Controllers\Apps.php on line 193.
+ 1 APPPATH\Controllers\Apps.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usia"', 'APPPATH\\Controllers\\Apps.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 03:33:07 --> syntax error, unexpected token "private"
+in APPPATH\Controllers\Apps.php on line 435.
+ 1 SYSTEMPATH\Router\Router.php(506): CodeIgniter\Router\AutoRouter->getRoute('apps/UploadFiles')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('apps/UploadFiles')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('apps/UploadFiles')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 03:39:26 --> syntax error, unexpected token "private"
+in APPPATH\Controllers\Apps.php on line 416.
+ 1 SYSTEMPATH\Router\Router.php(506): CodeIgniter\Router\AutoRouter->getRoute('apps/samples')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('apps/samples')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('apps/samples')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 03:40:22 --> fgetcsv(): Argument #1 ($stream) must be of type resource, CodeIgniter\HTTP\Files\UploadedFile given
+in APPPATH\Controllers\Apps.php on line 182.
+ 1 APPPATH\Controllers\Apps.php(182): fgetcsv(Object(CodeIgniter\HTTP\Files\UploadedFile), 4000, ',')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 03:41:33 --> fgetcsv(): Argument #1 ($stream) must be of type resource, CodeIgniter\HTTP\Files\UploadedFile given
+in APPPATH\Controllers\Apps.php on line 182.
+ 1 APPPATH\Controllers\Apps.php(182): fgetcsv(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 03:42:45 --> fgetcsv(): Argument #1 ($stream) must be of type resource, string given
+in APPPATH\Controllers\Apps.php on line 182.
+ 1 APPPATH\Controllers\Apps.php(182): fgetcsv('ROOTPATH\\datasets', 4000, ',')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 03:44:17 --> fgetcsv(): Argument #1 ($stream) must be of type resource, CodeIgniter\HTTP\Files\UploadedFile given
+in APPPATH\Controllers\Apps.php on line 183.
+ 1 APPPATH\Controllers\Apps.php(183): fgetcsv(Object(CodeIgniter\HTTP\Files\UploadedFile), 4000, ',')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 04:03:08 --> fopen(D:\APP\XAMPP\tmp\php4349.tmp): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Apps.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(D:\\APP\\XAMPP\\tmp\\php4349.tmp): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Apps.php', 199)
+ 2 APPPATH\Controllers\Apps.php(199): fopen('D:\\APP\\XAMPP\\tmp\\php4349.tmp', 'r')
+ 3 APPPATH\Controllers\Apps.php(184): App\Controllers\Apps->getDataFromCsv(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 04:08:14 --> syntax error, unexpected identifier "print_r", expecting "function" or "const"
+in APPPATH\Controllers\Apps.php on line 203.
+ 1 SYSTEMPATH\Router\Router.php(506): CodeIgniter\Router\AutoRouter->getRoute('apps/UploadFiles')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('apps/UploadFiles')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('apps/UploadFiles')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 04:08:21 --> Undefined variable $dataFromFile
+in APPPATH\Controllers\Apps.php on line 202.
+ 1 APPPATH\Controllers\Apps.php(202): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataFromFile', 'APPPATH\\Controllers\\Apps.php', 202)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 04:11:38 --> fgetcsv(): Argument #1 ($stream) must be of type resource, CodeIgniter\HTTP\Files\UploadedFile given
+in APPPATH\Controllers\Apps.php on line 184.
+ 1 APPPATH\Controllers\Apps.php(184): fgetcsv(Object(CodeIgniter\HTTP\Files\UploadedFile), 4000, ',')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 04:13:21 --> fgetcsv(): Argument #1 ($stream) must be of type resource, CodeIgniter\HTTP\Files\UploadedFile given
+in APPPATH\Controllers\Apps.php on line 184.
+ 1 APPPATH\Controllers\Apps.php(184): fgetcsv(Object(CodeIgniter\HTTP\Files\UploadedFile), 4000, ',')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-08-22 04:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 04:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 04:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 04:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 04:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

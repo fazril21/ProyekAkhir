@@ -1,0 +1,267 @@
+CRITICAL - 2023-08-19 15:23:28 --> Invalid file: "layouts/main.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/main.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layouts/main', null, true)
+ 3 APPPATH\Views\Pages\Map.php(23): CodeIgniter\View\View->include('layouts/main')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pages\\Map.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Pages/Map', [], true)
+ 7 APPPATH\Controllers\Peta.php(9): view('Pages/Map')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Peta->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peta))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-19 15:24:22 --> Invalid file: "layouts/main.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/main.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layouts/main', null, true)
+ 3 APPPATH\Views\Pages\Map.php(23): CodeIgniter\View\View->include('layouts/main')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pages\\Map.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Pages/Map', [], true)
+ 7 APPPATH\Controllers\Peta.php(9): view('Pages/Map')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Peta->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peta))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-19 15:28:57 --> Invalid file: "layouts/main.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/main.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layouts/main', null, true)
+ 3 APPPATH\Views\Pages\Map.php(23): CodeIgniter\View\View->include('layouts/main')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pages\\Map.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Pages/Map', [], true)
+ 7 APPPATH\Controllers\Peta.php(9): view('Pages/Map')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Peta->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peta))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-19 15:28:58 --> Invalid file: "layouts/main.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/main.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layouts/main', null, true)
+ 3 APPPATH\Views\Pages\Map.php(23): CodeIgniter\View\View->include('layouts/main')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pages\\Map.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Pages/Map', [], true)
+ 7 APPPATH\Controllers\Peta.php(9): view('Pages/Map')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Peta->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peta))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-19 15:29:02 --> Invalid file: "layouts/main.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/main.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layouts/main', null, true)
+ 3 APPPATH\Views\Pages\Map.php(23): CodeIgniter\View\View->include('layouts/main')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pages\\Map.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Pages/Map', [], true)
+ 7 APPPATH\Controllers\Apps.php(356): view('Pages/Map')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->Peta()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-19 16:05:30 --> fgetcsv(): Argument #3 ($separator) must be a single character
+in APPPATH\Views\Dataset\table_dataset.php on line 19.
+ 1 APPPATH\Views\Dataset\table_dataset.php(19): fgetcsv(resource (stream), 4000, 'ROOTPATH\\public')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(193): view('Dataset/table_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ReadDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-19 16:05:30 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ValueError))
+#5 {main}
+  thrown
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-19 16:35:03 --> count(): Argument #2 ($mode) must be of type int, string given
+in APPPATH\Controllers\Apps.php on line 185.
+ 1 APPPATH\Controllers\Apps.php(185): count([...], ';')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ReadDataset()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-19 16:35:12 --> count() expects at most 2 arguments, 3 given
+in APPPATH\Controllers\Apps.php on line 185.
+ 1 APPPATH\Controllers\Apps.php(185): count([...], 1000, ';')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ReadDataset()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-19 16:46:29 --> fgetcsv(): Argument #1 ($stream) must be of type resource, int given
+in APPPATH\Views\Dataset\table_dataset.php on line 19.
+ 1 APPPATH\Views\Dataset\table_dataset.php(19): fgetcsv(2000, ',')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(193): view('Dataset/table_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ReadDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-19 16:46:29 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#5 {main}
+  thrown
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-19 16:49:13 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-19 16:49:13 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-19 16:49:13 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-19 16:49:14 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-19 16:49:14 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 106
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(106): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-19 16:49:55 --> strtoupper() expects exactly 1 argument, 2 given
+in APPPATH\Views\Dataset\table_dataset.php on line 12.
+ 1 APPPATH\Views\Dataset\table_dataset.php(12): strtoupper('Usia;Gender;Kecamatan;Diagnosis Primer (Kategori)', ';')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(193): view('Dataset/table_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ReadDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-19 16:49:55 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ArgumentCountError))
+#5 {main}
+  thrown
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-19 16:50:01 --> strtoupper() expects exactly 1 argument, 2 given
+in APPPATH\Views\Dataset\table_dataset.php on line 12.
+ 1 APPPATH\Views\Dataset\table_dataset.php(12): strtoupper('Usia;Gender;Kecamatan;Diagnosis Primer (Kategori)', ';')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Dataset\\table_dataset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dataset/table_dataset', [], true)
+ 5 APPPATH\Controllers\Apps.php(193): view('Dataset/table_dataset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ReadDataset()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-19 16:50:01 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ArgumentCountError))
+#5 {main}
+  thrown
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-19 16:57:18 --> fgets() expects at most 2 arguments, 3 given
+in APPPATH\Controllers\Apps.php on line 184.
+ 1 APPPATH\Controllers\Apps.php(184): fgets(resource (stream), 0, ';')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ReadDataset()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-19 16:57:18 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Debug\Exceptions.php(139): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ArgumentCountError))
+#5 {main}
+  thrown
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-19 18:56:43 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Pages\Map.php on line 81.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Pages/Map', [], true)
+ 4 APPPATH\Controllers\Apps.php(368): view('Pages/Map', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->Peta()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-19 18:57:03 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Pages\Map.php on line 81.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Pages/Map', [], true)
+ 4 APPPATH\Controllers\Apps.php(368): view('Pages/Map', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->Peta()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-19 19:31:33 --> Phpml\Classification\NaiveBayes::predict(): Argument #1 ($samples) must be of type array, null given, called in D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php on line 110
+in VENDORPATH\php-ai\php-ml\src\Helper\Predictable.php on line 12.
+ 1 APPPATH\Controllers\Apps.php(110): Phpml\Classification\NaiveBayes->predict(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->ProccesPredict()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

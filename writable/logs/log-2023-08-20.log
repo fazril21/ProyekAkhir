@@ -1,0 +1,193 @@
+ERROR - 2023-08-20 06:12:16 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'project', 3306, '', 0)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(366): CodeIgniter\BaseModel->findAll()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->Peta()
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#9 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(366): CodeIgniter\BaseModel->findAll()
+#6 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->Peta()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2023-08-20 06:12:16 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_batas`', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Apps.php(366): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->Peta()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-20 06:21:21 --> Unclosed '{' on line 75
+in APPPATH\Views\Pages\Map.php on line 99.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Pages/Map', [], true)
+ 3 APPPATH\Controllers\Apps.php(368): view('Pages/Map', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->Peta()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-08-20 07:55:53 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'project', 3306, '', 0)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(33): CodeIgniter\BaseModel->findAll()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->Samples()
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#9 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(33): CodeIgniter\BaseModel->findAll()
+#6 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->Samples()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2023-08-20 07:55:53 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dataset`', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Apps.php(33): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->Samples()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-08-20 08:56:17 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'project', 3306, '', 0)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, 23)
+#6 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(57): CodeIgniter\BaseModel->find(23)
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->PredictiontForm()
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#9 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, 23)
+#5 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(57): CodeIgniter\BaseModel->find(23)
+#6 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->PredictiontForm()
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2023-08-20 08:56:17 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dataset`
+WHERE `dataset`.`id` = :dataset.id:', [...], false)
+ 3 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, 23)
+ 5 APPPATH\Controllers\Apps.php(57): CodeIgniter\BaseModel->find(23)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->PredictiontForm()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-20 15:16:24 --> Class "app\Models\MLogin" not found
+in APPPATH\Controllers\Login.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-08-20 15:17:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 15:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 16:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 16:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 16:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 16:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 16:29:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 16:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 16:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 16:29:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 16:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 16:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 16:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 16:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-20 16:29:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
