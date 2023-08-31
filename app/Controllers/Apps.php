@@ -289,21 +289,20 @@ class Apps extends BaseController
     }
     public function Peta()
     {
-        $keyword = ['Cigugur','Cijulang','Cimerak','Kalipucang',
-                    'Langkaplancar','Mangunjaya','Padaherang',
-                    'Pangandaran','Parigi','Sidamulih'];
+        $kecamatanData = $this->Kecamatan->findAll(); // Data kecamatan dari tabel pertama
         $totalDiagnosis = [];
-
-        foreach ($keyword as $keyword) {
-        $totalDiagnosis[$keyword] = $this->diagnosisModel->like('kecamatan',$keyword)->countAllResults();
+    
+        foreach ($kecamatanData as $kecamatan) {
+            $keyword = $kecamatan->kecamatan;
+            $totalDiagnosis[$keyword] = $this->diagnosisModel->where('kecamatan', $keyword)->countAllResults();
         }
-
-
+    
         $peta = [
             'vb' => $this->vb,
-            'kecamatan' => $this->Kecamatan->findAll(),
+            'kecamatan' => $kecamatanData,
             'totalDiagnosis' => $totalDiagnosis
         ];
+    
         return view('Pages/Map', $peta);
     }
 }

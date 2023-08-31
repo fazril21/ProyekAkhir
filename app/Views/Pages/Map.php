@@ -78,43 +78,20 @@
     'fillopacity': 0.5
   }
 
-  <?php
-  $green = array(
-    'color' => 'green',
-    'opacity' => 1,
-    'weight' => 2,
-    'fillcolor' => 'white',
-    'fillopacity' => 0.5
-  );
-
-  $red = array(
-    'color' => 'red',
-    'opacity' => 1,
-    'weight' => 2,
-    'fillcolor' => 'white',
-    'fillopacity' => 0.5
-  );
-  ?>
-
-  <?php
-  $popupContent = '';
-  foreach ($totalDiagnosis as $keyword => $count) {
-    $popupContent .= '<span class="text-uppercase">' . $keyword . ': ' . $count . '</span><br>';
-  }
-
-  ?>
   L.geoJSON({
     "type": "FeatureCollection",
     "features": [<?= $vb; ?>]
   }, {
-    style: vb
+    style : vb
   }).addTo(map);
-  <?php foreach ($kecamatan as $kecamatan => $kec) {
+
+  <?php foreach ($kecamatan as $kec) {
     $popupContentKec = ''; // Inisialisasi konten popup khusus untuk kecamatan ini
-    foreach ($totalDiagnosis as $keyword => $count) {
-      if ($kec->kecamatan === $keyword) {
-        $popupContentKec .= '<span class="text-uppercase">' . $keyword . ': ' . $count . '</span><br>';
-      }
+
+    $keyword = $kec->kecamatan;
+    if (isset($totalDiagnosis[$keyword])) {
+      $count = $totalDiagnosis[$keyword];
+      $popupContentKec = '<span class="text-uppercase">' . 'jumlah kasus penyakit : ' . $count . '</span><br>';
     }
   ?>
     L.geoJSON({
@@ -125,13 +102,11 @@
     }).addTo(map).on('click', function() {
       Swal.fire({
         title: '<span class="text-uppercase"><?= $kec->kecamatan; ?></span>',
-        html: '<?= $popupContent; ?>',
+        html: '<?= $popupContentKec; ?>',
       })
     });
   <?php } ?>
 </script>
-<div><?= $popupContentKec ?></div>
 
 </html>
-
 <?= $this->endSection() ?>
