@@ -309,3 +309,286 @@ INFO - 2023-08-22 04:18:35 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-08-22 04:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-08-22 04:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-08-22 04:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 05:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 05:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 05:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 05:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 05:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-22 05:33:13 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(185): date('Y', false)
+ 2 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH\ThirdParty\Kint\Parser\SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 4 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 8)
+ 5 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(427): Kint\Parser\Parser->applyPlugins(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 8)
+ 6 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 7 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(383): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 8 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+ 9 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+10 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\FileCollection), Object(Kint\Zval\Value))
+11 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\FileCollection), Object(Kint\Zval\Value))
+12 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\IncomingRequest), Object(Kint\Zval\Value))
+13 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\IncomingRequest), Object(Kint\Zval\Value))
+14 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\Validation\StrictRules\FileRules), Object(Kint\Zval\Value))
+15 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(383): Kint\Parser\Parser->parse(Object(CodeIgniter\Validation\StrictRules\FileRules), Object(Kint\Zval\Value))
+16 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+17 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(565): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+18 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\Validation\Validation), Object(Kint\Zval\Value))
+19 SYSTEMPATH\ThirdParty\Kint\Kint.php(285): Kint\Parser\Parser->parse(Object(CodeIgniter\Validation\Validation), Object(Kint\Zval\Value))
+20 SYSTEMPATH\ThirdParty\Kint\Kint.php(268): Kint\Kint->dumpVar(Object(CodeIgniter\Validation\Validation), Object(Kint\Zval\Value))
+21 SYSTEMPATH\ThirdParty\Kint\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+22 SYSTEMPATH\Debug\Toolbar.php(109): Kint\Kint::dump(Object(CodeIgniter\Validation\Validation))
+23 SYSTEMPATH\Debug\Toolbar.php(370): CodeIgniter\Debug\Toolbar->run(1692682393.874774, 0.0532, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+24 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+25 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+26 SYSTEMPATH\CodeIgniter.php(519): CodeIgniter\Filters\Filters->run('Import/processImport', 'after')
+27 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+28 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+29 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-08-22 05:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 05:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 05:35:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 05:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 05:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 05:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 05:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 05:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 05:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 05:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 05:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-22 06:13:50 --> syntax error, unexpected token "private", expecting end of file
+in APPPATH\Controllers\Apps.php on line 405.
+ 1 SYSTEMPATH\Router\Router.php(506): CodeIgniter\Router\AutoRouter->getRoute('apps/samples')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('apps/samples')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('apps/samples')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-08-22 06:31:00 --> mysqli_sql_exception: Unknown column 'file_name' in 'where clause' in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(154): CodeIgniter\Validation\Rules->is_unique('well pisanpokon...', 'file_name', Array)
+#6 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('well pisanpokon...', 'diagnosis.file_...', Array, NULL, 'file_name')
+#7 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('file_name', 'Nama Dokumen', 'well pisanpokon...', Array, Array)
+#8 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#9 D:\APP\XAMPP\htdocs\bayes\app\Controllers\Apps.php(146): CodeIgniter\Controller->validate(Array)
+#10 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+#11 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#12 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\APP\XAMPP\htdocs\bayes\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\APP\\XAMPP\\ht...')
+#15 {main}
+CRITICAL - 2023-08-22 06:31:00 --> Unknown column 'file_name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `diagnosis`
+WHERE `file_name` = :file_name:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(154): CodeIgniter\Validation\Rules->is_unique('well pisanpokonamah', 'file_name', [...])
+ 4 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('well pisanpokonamah', 'diagnosis.file_name', [...], null, 'file_name')
+ 5 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('file_name', 'Nama Dokumen', 'well pisanpokonamah', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Apps.php(146): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-08-22 06:48:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 06:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-22 06:52:32 --> Invalid file: "index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('FCPATH\\index.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\Import.php(22): view('index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Import->importCsvToDb()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 06:52:55 --> Invalid file: "Pages/Contoh.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Pages/Contoh.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Pages/Contoh', [], true)
+ 3 APPPATH\Controllers\Import.php(22): view('Pages/Contoh', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Import->importCsvToDb()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Import))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-08-22 06:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 06:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 06:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 06:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 06:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 06:55:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 07:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 07:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-22 07:05:51 --> syntax error, unexpected token "if"
+in APPPATH\Config\Routes.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-08-22 07:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 07:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 07:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-22 07:27:44 --> fgetcsv(): Argument #1 ($stream) must be of type resource, CodeIgniter\HTTP\Files\UploadedFile given
+in APPPATH\Controllers\Apps.php on line 197.
+ 1 APPPATH\Controllers\Apps.php(197): fgetcsv(Object(CodeIgniter\HTTP\Files\UploadedFile), 4000, ',')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 07:39:01 --> CodeIgniter\Validation\Validation::withRequest(): Argument #1 ($request) must be of type CodeIgniter\HTTP\RequestInterface, null given, called in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Controller.php on line 140
+in SYSTEMPATH\Validation\Validation.php on line 392.
+ 1 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->withRequest(null)
+ 2 APPPATH\Controllers\Import.php(20): CodeIgniter\Controller->validate([...])
+ 3 APPPATH\Controllers\Apps.php(186): App\Controllers\Import->processImport()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 07:39:40 --> CodeIgniter\Validation\Validation::withRequest(): Argument #1 ($request) must be of type CodeIgniter\HTTP\RequestInterface, null given, called in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Controller.php on line 140
+in SYSTEMPATH\Validation\Validation.php on line 392.
+ 1 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->withRequest(null)
+ 2 APPPATH\Controllers\Import.php(20): CodeIgniter\Controller->validate([...])
+ 3 APPPATH\Controllers\Apps.php(194): App\Controllers\Import->processImport()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 07:39:49 --> CodeIgniter\Validation\Validation::withRequest(): Argument #1 ($request) must be of type CodeIgniter\HTTP\RequestInterface, null given, called in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Controller.php on line 140
+in SYSTEMPATH\Validation\Validation.php on line 392.
+ 1 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->withRequest(null)
+ 2 APPPATH\Controllers\Import.php(20): CodeIgniter\Controller->validate([...])
+ 3 APPPATH\Controllers\Apps.php(194): App\Controllers\Import->processImport()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 07:40:17 --> CodeIgniter\Validation\Validation::withRequest(): Argument #1 ($request) must be of type CodeIgniter\HTTP\RequestInterface, null given, called in D:\APP\XAMPP\htdocs\bayes\vendor\codeigniter4\framework\system\Controller.php on line 140
+in SYSTEMPATH\Validation\Validation.php on line 392.
+ 1 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->withRequest(null)
+ 2 APPPATH\Controllers\Import.php(20): CodeIgniter\Controller->validate([...])
+ 3 APPPATH\Controllers\Apps.php(145): App\Controllers\Import->processImport()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-08-22 07:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-22 07:47:23 --> fgetcsv(): Argument #1 ($stream) must be of type resource, CodeIgniter\HTTP\Files\UploadedFile given
+in APPPATH\Controllers\Apps.php on line 186.
+ 1 APPPATH\Controllers\Apps.php(186): fgetcsv(Object(CodeIgniter\HTTP\Files\UploadedFile), 4000, ',')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 07:49:10 --> fgetcsv(): Argument #1 ($stream) must be of type resource, CodeIgniter\HTTP\Files\UploadedFile given
+in APPPATH\Controllers\Apps.php on line 187.
+ 1 APPPATH\Controllers\Apps.php(187): fgetcsv(Object(CodeIgniter\HTTP\Files\UploadedFile), 4000, ',')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 07:49:52 --> fgetcsv(): Argument #1 ($stream) must be of type resource, CodeIgniter\HTTP\Files\UploadedFile given
+in APPPATH\Controllers\Apps.php on line 196.
+ 1 APPPATH\Controllers\Apps.php(196): fgetcsv(Object(CodeIgniter\HTTP\Files\UploadedFile), 4000, ',')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 07:54:18 --> fopen(../public/csvfile/1692690858_fe869cf270da013931be.csv): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Apps.php on line 196.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(../public/csvfile/1692690858_fe869cf270da013931be.csv): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Apps.php', 196)
+ 2 APPPATH\Controllers\Apps.php(196): fopen('../public/csvfile/1692690858_fe869cf270da013931be.csv', 'r')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 07:54:57 --> fopen(/datasets/1692690897_ccd50a960bef608df0b4.csv): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Apps.php on line 196.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(/datasets/1692690897_ccd50a960bef608df0b4.csv): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Apps.php', 196)
+ 2 APPPATH\Controllers\Apps.php(196): fopen('/datasets/1692690897_ccd50a960bef608df0b4.csv', 'r')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 07:56:08 --> fclose(): Argument #1 ($stream) must be of type resource, CodeIgniter\HTTP\Files\UploadedFile given
+in APPPATH\Controllers\Apps.php on line 210.
+ 1 APPPATH\Controllers\Apps.php(210): fclose(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 07:56:21 --> Undefined variable $path
+in APPPATH\Controllers\Apps.php on line 196.
+ 1 APPPATH\Controllers\Apps.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $path', 'APPPATH\\Controllers\\Apps.php', 196)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 07:57:47 --> Undefined variable $set_file_name
+in APPPATH\Controllers\Apps.php on line 197.
+ 1 APPPATH\Controllers\Apps.php(197): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $set_file_name', 'APPPATH\\Controllers\\Apps.php', 197)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 07:58:00 --> Undefined variable $newName
+in APPPATH\Controllers\Apps.php on line 196.
+ 1 APPPATH\Controllers\Apps.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newName', 'APPPATH\\Controllers\\Apps.php', 196)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 07:58:13 --> Undefined variable $files
+in APPPATH\Controllers\Apps.php on line 196.
+ 1 APPPATH\Controllers\Apps.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $files', 'APPPATH\\Controllers\\Apps.php', 196)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 08:00:15 --> finfo_file(D:\APP\XAMPP\tmp\php513D.tmp): Failed to open stream: No such file or directory
+in SYSTEMPATH\Files\File.php on line 115.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(D:\\APP\\XAMPP\\tmp\\php513D.tmp): Failed to open stream: No such file or directory', 'SYSTEMPATH\\Files\\File.php', 115)
+ 2 SYSTEMPATH\Files\File.php(115): finfo_file(Object(finfo), 'D:\\APP\\XAMPP\\tmp\\php513D.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(302): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(291): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Files\File.php(127): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 APPPATH\Controllers\Apps.php(196): CodeIgniter\Files\File->getRandomName()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->UploadFiles()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-22 08:05:58 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-22 08:06:59 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-08-22 13:19:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-22 16:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

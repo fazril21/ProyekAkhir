@@ -49,32 +49,74 @@
   </div>
 </body>
 <script>
-  var map = L.map('maps').setView([-7.612430131926203, 108.47971536919238], 10);
+  var map = L.map('maps').setView([-7.612430131926203, 108.47971536919238], 11);
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
 
   }).addTo(map);
+
+  function getColor(d) {
+    return d > 1000 ? '#800026' :
+      d > 500 ? '#BD0026' :
+      d > 200 ? '#E31A1C' :
+      d > 100 ? '#FC4E2A' :
+      d > 50 ? '#FD8D3C' :
+      d > 20 ? '#FEB24C' :
+      d > 10 ? '#FED976' :
+      '#FFEDA0';
+  }
 
   var vk = {
     'color': 'red'
   }
 
   var vb = {
-    'color': 'gray',
+    'color': 'green',
     'opacity': 1,
     'weight': 2,
     'fillcolor': 'white',
     'fillopacity': 0.5
   }
 
+  <?php
+  $green = array(
+    'color' => 'green',
+    'opacity' => 1,
+    'weight' => 2,
+    'fillcolor' => 'white',
+    'fillopacity' => 0.5
+  );
 
+  $red = array(
+    'color' => 'red',
+    'opacity' => 1,
+    'weight' => 2,
+    'fillcolor' => 'white',
+    'fillopacity' => 0.5
+  );
+  ?>
+
+  <?php
+  $popupContent = '';
+  foreach ($totalDiagnosis as $keyword => $count) {
+    $popupContent .= '<span class="text-uppercase">' . $keyword . ': ' . $count . '</span><br>';
+  }
+
+  ?>
   L.geoJSON({
     "type": "FeatureCollection",
     "features": [<?= $vb; ?>]
   }, {
     style: vb
   }).addTo(map);
-  <?php foreach ($kecamatan as $kecamatan => $kec) { ?>
+  <?php foreach ($kecamatan as $kecamatan => $kec) {
+    $popupContentKec = ''; // Inisialisasi konten popup khusus untuk kecamatan ini
+    foreach ($totalDiagnosis as $keyword => $count) {
+      if ($kec->kecamatan === $keyword) {
+        $popupContentKec .= '<span class="text-uppercase">' . $keyword . ': ' . $count . '</span><br>';
+      }
+    }
+  ?>
     L.geoJSON({
       "type": "FeatureCollection",
       "features": [<?= $kec->koordinat; ?>]
@@ -83,10 +125,12 @@
     }).addTo(map).on('click', function() {
       Swal.fire({
         title: '<span class="text-uppercase"><?= $kec->kecamatan; ?></span>',
+        html: '<?= $popupContent; ?>',
       })
     });
   <?php } ?>
 </script>
+<div><?= $popupContentKec ?></div>
 
 </html>
 

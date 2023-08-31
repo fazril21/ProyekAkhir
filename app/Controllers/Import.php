@@ -17,13 +17,13 @@ class Import extends BaseController
     public function processImport()
     {
         $input = $this->validate([
-            'file' => 'uploaded[file_nya]|ext_in[file_nya,csv],'
+            'file' => 'uploaded[file]|ext_in[file,csv],'
         ]);
         if (!$input) {
             $data['validation'] = $this->validator;
-            return view('Dataset/list', $data);
+            return view('Dataset/Contoh', $data);
         } else {
-            if ($file = $this->request->getFile('file_nya')) {
+            if ($file = $this->request->getFile('file')) {
                 if ($file->isValid() && !$file->hasMoved()) {
                     $newName = $file->getRandomName();
                     $file->move('../public/csvfile', $newName);
@@ -43,6 +43,16 @@ class Import extends BaseController
                         $i++;
                     }
                     fclose($file);
+                    $count = 0;
+                    foreach($csvArr as $userdata){
+                        $students = new Diagnosis();
+                        $findRecord = $students->where('usia', $userdata['usia'])->countAllResults();
+                        if($findRecord == 0){
+                            if($students->insert($userdata)){
+                                $count++;
+                            }
+                        }
+                    }
                 }
             }
         }

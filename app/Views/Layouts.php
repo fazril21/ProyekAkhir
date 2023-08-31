@@ -58,7 +58,7 @@
           </a>
         </li>
         <button class="btn btn-info dropdown-toggle m-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Dropdown button
+          DATA
         </button>
         <ul class="dropdown-menu m-1">
         <li class="nav-item">
@@ -66,7 +66,7 @@
             <div class="icon icon-shape icon-sm border-radius-md text-center me-1 d-flex align-items-center justify-content-center">
               <i class="fa fa-folder-open text-warning text-lg opacity-10"></i>
             </div>
-            <span class="nav-link-text ms-1"> Dataset</span>
+            <span class="nav-link-text ms-1"> Lihat Data</span>
           </a>
         </li>
         <li class="nav-item">
@@ -74,7 +74,7 @@
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="fa fa-map text-primary text-lg opacity-10"></i>
             </div>
-            <span class="nav-link-text ms-1">Peta</span>
+            <span class="nav-link-text ms-1">Lihat Peta</span>
           </a>
         </li>
         </ul>

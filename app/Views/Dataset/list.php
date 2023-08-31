@@ -99,8 +99,6 @@
         let data = new FormData(forms);
 
         $.ajax({
-
-
             url: '<?= base_url('apps/UploadFiles') ?>',
             type: 'POST',
             dataType: 'json',

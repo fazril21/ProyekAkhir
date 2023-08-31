@@ -1,0 +1,47 @@
+INFO - 2023-08-29 11:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-29 11:18:56 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-29 11:24:40 --> Undefined variable $kecamatan
+in APPPATH\Views\Pages\Map.php on line 77.
+ 1 APPPATH\Views\Pages\Map.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kecamatan', 'APPPATH\\Views\\Pages\\Map.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pages\\Map.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Pages/Map', [], true)
+ 5 APPPATH\Controllers\Apps.php(443): view('Pages/Map', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->Peta()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-29 11:25:04 --> Undefined variable $kecamatan
+in APPPATH\Views\Pages\Map.php on line 77.
+ 1 APPPATH\Views\Pages\Map.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kecamatan', 'APPPATH\\Views\\Pages\\Map.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pages\\Map.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Pages/Map', [], true)
+ 5 APPPATH\Controllers\Apps.php(443): view('Pages/Map', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->Peta()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-29 11:25:59 --> Call to a member function findAll() on null
+in APPPATH\Controllers\Apps.php on line 442.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->Peta()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-29 11:28:41 --> Undefined variable $id
+in APPPATH\Views\Pages\Map.php on line 77.
+ 1 APPPATH\Views\Pages\Map.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Views\\Pages\\Map.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pages\\Map.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Pages/Map', [], true)
+ 5 APPPATH\Controllers\Apps.php(444): view('Pages/Map', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->Peta()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

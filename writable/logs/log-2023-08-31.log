@@ -1,0 +1,50 @@
+INFO - 2023-08-31 04:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-31 04:19:19 --> Undefined variable $vb
+in APPPATH\Views\Pages\Map.php on line 83.
+ 1 APPPATH\Views\Pages\Map.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vb', 'APPPATH\\Views\\Pages\\Map.php', 83)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pages\\Map.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Pages/Map', [], true)
+ 5 APPPATH\Controllers\Apps.php(304): view('Pages/Map', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->Peta()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-31 04:26:27 --> Undefined variable $vk
+in APPPATH\Views\Pages\Map.php on line 83.
+ 1 APPPATH\Views\Pages\Map.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vk', 'APPPATH\\Views\\Pages\\Map.php', 83)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pages\\Map.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Pages/Map', [], true)
+ 5 APPPATH\Controllers\Apps.php(306): view('Pages/Map', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->Peta()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-08-31 08:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-31 08:46:43 --> Undefined variable $popupContentKec
+in APPPATH\Views\Pages\Map.php on line 49.
+ 1 APPPATH\Views\Pages\Map.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $popupContentKec', 'APPPATH\\Views\\Pages\\Map.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pages\\Map.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Pages/Map', [], true)
+ 5 APPPATH\Controllers\Apps.php(307): view('Pages/Map', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->Peta()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-31 08:58:04 --> Undefined variable $popupContentKec
+in APPPATH\Views\Pages\Map.php on line 132.
+ 1 APPPATH\Views\Pages\Map.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $popupContentKec', 'APPPATH\\Views\\Pages\\Map.php', 132)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pages\\Map.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Pages/Map', [], true)
+ 5 APPPATH\Controllers\Apps.php(307): view('Pages/Map', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Apps->Peta()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

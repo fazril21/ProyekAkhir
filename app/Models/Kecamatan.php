@@ -7,4 +7,5 @@ class Kecamatan extends Model
     protected $table            = 'tbl_batas';
     protected $returnType       = 'object';
 
+
 }
