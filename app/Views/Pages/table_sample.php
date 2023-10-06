@@ -6,7 +6,7 @@ foreach ($first_line as $k) {
   echo '<td>'.strtoupper($k).'</td>';  
 }
 echo '</tr><thead><tbody>';
-while (($data = fgetcsv($file, 1000, ",")) !== FALSE) {
+while (($data = fgetcsv($file, 4000, ",")) !== FALSE) {
 
 echo '<tr>';
 for ($i = 0; $i <= $jml_sample; ++$i) {

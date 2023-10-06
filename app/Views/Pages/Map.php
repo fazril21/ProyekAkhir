@@ -9,7 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="<?= base_url() ?>/assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="<?= base_url() ?>/assets/img/favicon.png">
-  <title>Abdul Yamin | NBC</title>
   <!--     Fonts and icons     -->
   <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" /> -->
   <!-- Nucleo Icons -->
@@ -55,17 +54,6 @@
 
   }).addTo(map);
 
-  function getColor(d) {
-    return d > 1000 ? '#800026' :
-      d > 500 ? '#BD0026' :
-      d > 200 ? '#E31A1C' :
-      d > 100 ? '#FC4E2A' :
-      d > 50 ? '#FD8D3C' :
-      d > 20 ? '#FEB24C' :
-      d > 10 ? '#FED976' :
-      '#FFEDA0';
-  }
-
   var vk = {
     'color': 'red'
   }
@@ -82,16 +70,15 @@
     "type": "FeatureCollection",
     "features": [<?= $vb; ?>]
   }, {
-    style : vb
+    style: vb
   }).addTo(map);
 
   <?php foreach ($kecamatan as $kec) {
     $popupContentKec = ''; // Inisialisasi konten popup khusus untuk kecamatan ini
-
     $keyword = $kec->kecamatan;
     if (isset($totalDiagnosis[$keyword])) {
       $count = $totalDiagnosis[$keyword];
-      $popupContentKec = '<span class="text-uppercase">' . 'jumlah kasus penyakit : ' . $count . '</span><br>';
+      $popupContentKec = '<span class="text-uppercase">' . 'JUMLAH KASUS : ' . $count . '</span><br>';
     }
   ?>
     L.geoJSON({
@@ -107,6 +94,7 @@
     });
   <?php } ?>
 </script>
+
 
 </html>
 <?= $this->endSection() ?>

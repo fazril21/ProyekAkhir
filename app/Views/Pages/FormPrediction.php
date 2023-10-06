@@ -8,12 +8,9 @@ for($i = 0; $i < $sample_count; $i++) {
 echo '<label>'.strtoupper($column_names[$i]).'</label>';
 $options = array_unique(array_column($samples, $i));
 $jml = count($options);
-	// echo '<pre>';
-	// print_r($jml);
-	// echo '</pre>';
-if ($jml < 6) {
-	// echo 'Option <br>';
-	// option 
+
+if ($jml < 11) {
+
 ?>
 <div class="form-group mt-0 mb-0">
 <select name="sample[]" class="form-control form-control-sm">
@@ -26,11 +23,7 @@ echo '<option value="'.$option.'">'.$option.'</option>';
 </select>
 </div>
 <?php
-// option 
-
 }else{
-	// echo 'Text <br>';
-	// text 
 ?>
 <div class="form-group mt-0 mb-0">
 <input class="form-control form-control-sm" name="sample[]" type="text">
@@ -38,17 +31,10 @@ echo '<option value="'.$option.'">'.$option.'</option>';
 <?php
 // text
 }
-
-
-
-
 }
 ?>
-
 <button type="submit" name="btn_predict" id="btn_predict" class="btn btn-info w-100 mt-3 mb-1"><i class="fas fa-paper-plane"></i> Klasifikasi</button>
 <button type="reset" class="btn btn-secondary w-100 mt-0"><i class="fa fa-refresh"></i> Reset</button>
-
-
 </form>
 <script>
 	$('#form-predict').submit(function(e) {

@@ -71,6 +71,11 @@
     scroll-behavior: smooth;
   }
 }
+.card1{
+  margin: 10%;
+  width: auto;
+  height: auto;
+}
 
 body {
   margin: 0;
@@ -26607,5 +26612,6 @@ pre[class*="language-"] {
     overflow: auto !important;
   }
 }
+
 
 /*# sourceMappingURL=dashboard-free.css.map */

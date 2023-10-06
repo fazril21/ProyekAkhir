@@ -40,7 +40,37 @@ class Apps extends BaseController
 
     public function index()
     {
-        return view('Home');
+        $tampilKecamatan = $this->Kecamatan->findAll(); // Data kecamatan dari tabel pertama
+        $totalKasus = [];
+
+        foreach ($tampilKecamatan as $kecamatan) {
+            $kataKunci = $kecamatan->kecamatan;
+            $totalKasus[$kataKunci] = $this->diagnosisModel->where('kecamatan', $kataKunci)->countAllResults();
+        }
+        $kecamatanTertinggi = '';
+        $jumlahKasusTertinggi = 0;
+        $kecamatanTerendah = '';
+        $jumlahKasusTerendah = PHP_INT_MAX;
+
+        foreach ($totalKasus as $kec => $count) {
+            if ($count > $jumlahKasusTertinggi) {
+                $jumlahKasusTertinggi = $count;
+                $kecamatanTertinggi = $kec;
+            }
+            if ($count < $jumlahKasusTerendah) {
+                $jumlahKasusTerendah = $count;
+                $kecamatanTerendah = $kec;
+            }
+        }
+
+        $dataKasus = [
+            'vb' => $this->vb,
+            'tampil' => $tampilKecamatan,
+            'kasus' => $totalKasus,
+            'kecamatanTertinggi' => $kecamatanTertinggi,
+            'kecamatanTerendah' => $kecamatanTerendah,
+        ];
+        return view('Home', $dataKasus);
     }
     function Samples()
     {
@@ -291,18 +321,21 @@ class Apps extends BaseController
     {
         $kecamatanData = $this->Kecamatan->findAll(); // Data kecamatan dari tabel pertama
         $totalDiagnosis = [];
-    
+
         foreach ($kecamatanData as $kecamatan) {
             $keyword = $kecamatan->kecamatan;
             $totalDiagnosis[$keyword] = $this->diagnosisModel->where('kecamatan', $keyword)->countAllResults();
         }
-    
+        // Menemukan kecamatan dengan jumlah kasus tertinggi
+
+
         $peta = [
             'vb' => $this->vb,
             'kecamatan' => $kecamatanData,
-            'totalDiagnosis' => $totalDiagnosis
+            'totalDiagnosis' => $totalDiagnosis,
+
         ];
-    
+
         return view('Pages/Map', $peta);
     }
 }
